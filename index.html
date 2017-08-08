@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>UNO</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript" src="uno.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="gameContainer">
+				<div id="computerContainer">
+					<div id="computerHead">
+						<div id="computerFace" class="mute">
+							<img src="./images/computerFace1.png" alt="computer">
+						</div>
+					</div>
+					<div id="computerHand"></div>
+					<div id="infoScreen" class="hide">
+						<div id="exitButton">&times;</div>
+						<div id="infoContainer">
+							<div id="gameMap"><img src="./images/gameMap.png" alt="game map"></div>
+							
+								<div id="gameTips"><img src="./images/gameTips.png" alt="game tips"></div>
+								<div id="specialCardsContainer">
+									<div class="head">Special Cards</div>
+									<div class="paragraph"><span class="paragraphHead">Skip</span><br>Skip the other player's turn.<br>You get to play twice!</div>
+									<div class="paragraph"><span class="paragraphHead">Draw Two</span><br>The other player has to draw two cards.</div>
+									<div class="paragraph"><span class="paragraphHead">Wild</span><br>You choose the color of the discard pile.</div>
+									<div class="paragraph"><span class="paragraphHead">Wild Draw Four</span><br>You choose the color of the discard pile <span class="italic">and</span> the other player has to draw four cards.</div>
+							</div>
+							
+							
+							<div></div>
+						</div>
+					</div>
+				</div>
+				<div id="discardDeckContainer">
+					<div id="welcomeMessage" class="hide">
+						<div>It's your turn!</div>
+						<div id="triangleDown"></div>
+					</div>
+					<div id="wildMenu" class="hide">
+						<div id="triangleLeft"></div>
+						<div>Pick a color</div>
+						<div class="wildButton" id="Red"></div>
+						<div class="wildButton" id="Green"></div>
+						<div class="wildButton" id="Blue"></div>
+						<div class="wildButton" id="Yellow"></div>
+					</div>
+					<div id="overlay" class="hide"></div>
+					<div id="gameOverScreen" class="hide">
+						<div id="gameOverMessage"></div>
+						<div id="gameOverMenu"><b>Play again?</b>
+							<div id="yesButton">yes</div>
+							<div id="noButton">no</div>
+						</div>
+					</div>
+					<div id="discardDeck"></div>
+				</div>
+				<div id="playerContainer">
+					<div id="playerHead">
+						<div id="playerFace">
+							<img src="./images/playerFace1.png" alt="player">
+						</div>
+					</div>
+					<div id="sidebar">
+						<div id="drawButton">draw</div>
+						<div id="passButton" class="disabled">pass</div>
+					</div>
+					<div id="playerHand"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
